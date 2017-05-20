@@ -1,0 +1,41 @@
+{
+  "name": "adocker-redis",
+  "version": "1.0.0",
+  "description": "Docker redis utility",
+  "main": "lib",
+  "scripts": {
+    "test": "node ./ci/test.js",
+    "prepare": "node ./ci/build.js"
+  },
+  "repository": "a-labo/adocker-redis",
+  "keywords": [],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-labo/adocker-redis/issues"
+  },
+  "homepage": "https://github.com/a-labo/adocker-redis#readme",
+  "dependencies": {
+    "adocker": "^2.0.0",
+    "asfs": "^1.2.3",
+    "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "amocha": "^2.0.0",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.4",
+    "ape-tasking": "^4.0.9",
+    "ape-tmpl": "^5.0.20",
+    "ape-updating": "^4.1.1",
+    "coz": "^6.0.20",
+    "injectmock": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  }
+}
