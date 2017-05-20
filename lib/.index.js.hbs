@@ -6,12 +6,12 @@
 
 'use strict'
 
-const adockerMysql = require('./adocker_mysql')
+const adockerRedis = require('./adocker_redis')
 
-let lib = adockerMysql.bind(this)
+let lib = adockerRedis.bind(this)
 
-Object.assign(lib, adockerMysql, {
-  adockerMysql
+Object.assign(lib, adockerRedis, {
+  adockerRedis
 })
 
 module.exports = lib
