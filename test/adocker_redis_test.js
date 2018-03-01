@@ -19,9 +19,11 @@ describe('adocker-redis', function () {
   })
 
   it('Adocker redis', async () => {
-    let redis = adockerRedis('adocker-redis-test-01')
+    const redis = adockerRedis('adocker-redis-test-01', {
+      conf: `${__dirname}/../misc/mocks/mock-redis.conf`
+    })
 
-    let {run, remove, logs, stop, isRunning, hasBuild} = redis.cli()
+    const {run, remove, logs, stop, isRunning, hasBuild} = redis.cli()
 
     equal(await isRunning(), false)
     equal(await hasBuild(), false)
